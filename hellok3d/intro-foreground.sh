@@ -1,4 +1,4 @@
 #! /bin/bash
 
 source .bashrc
-clear
+echo "pizza"
