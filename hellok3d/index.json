@@ -12,7 +12,8 @@
     "steps": [
       {
         "title": "Step 1",
-        "text": "step1.md"
+        "text": "step1.md",
+        "code": "intro-foreground.sh"
       },
       {
         "title": "Step 2",
