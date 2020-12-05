@@ -4,10 +4,10 @@
 Ciao, questo terminale ti permettera' di accedere alle funzionalita' del tuo Cloud Provider inventato che si chiama Codemotion Cloud. 
 Potrai esercitare le tue nuove abilita' creando un cluster di macchine kubernetes, effettuando il deploy di servizi web ed esplorando le possibilita' di kubernetes.
 
-## Login in Codemotion Cloud
-Facciamo il login nel nostro ambiente cloud simulato:
+## Lanciamo l'ambiente Codemotion Cloud
+Entriamo nel nostro ambiente cloud simulato:
 
-`login`{{execute}}
+`launch.sh`{{execute}}
 
 ## Crea il tuo primo cluster kubernetes
 Creiamo un cluster kubernetes con il tool di Codemotion Cloud `clusterinit`
