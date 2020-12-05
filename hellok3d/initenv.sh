@@ -5,5 +5,4 @@ snap install kubectl --classic
 snap install figlet
 echo "alias clusterinit='k3d cluster create'" >> .bashrc
 echo "alias login='figlet Codemotion Cloud'" >> .bashrc
-source .bashrc
-
+figlet "Ciao"
