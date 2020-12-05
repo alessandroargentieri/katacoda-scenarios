@@ -20,7 +20,8 @@
     ],
     "intro": {
       "text": "intro.md",
-      "courseData": "initenv.sh"
+      "courseData": "initenv.sh",
+      "code": "intro-foreground.sh"
     },
     "finish": {
       "text": "finish.md"
