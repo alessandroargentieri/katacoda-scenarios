@@ -11,5 +11,5 @@ workers=${workers:-2}
 
 echo "Creating $name cluster... just wait"
 
-k3d cluster creare $name --servers $masters --agents $workers 1>/dev/null 2>/dev/tty
+k3d cluster create $name --servers $masters --agents $workers 1>/dev/null 2>/dev/tty
 
