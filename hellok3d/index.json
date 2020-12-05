@@ -1,6 +1,6 @@
 {
-  "title": "hellok3d",
-  "description": "hellok3d",
+  "title": "Codemotion Cloud",
+  "description": "Approcciamo kubernetes!",
   "difficulty": "Beginner",
   "time": "2",
   "details": {
@@ -12,7 +12,7 @@
     },
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Partiamo!",
         "text": "step1.md"
       },
       {

@@ -13,7 +13,7 @@ Entriamo nel nostro ambiente cloud simulato:
 Creiamo un cluster kubernetes con il tool di Codemotion Cloud `clusterinit`
 Il cluster avra' un nodo master e due nodi worker e si chiamera' `demo`
 
-`clusterinit demo --servers 1 --agents 2`{{execute}}
+`clusterinit`{{execute}}
 
 Controlliamo il cluster appena creato usando `kubectl`.
 
