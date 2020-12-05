@@ -6,14 +6,14 @@
   "details": {
     "assets": {
        "host01": [
-           {"file": "launch.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+           {"file": "launch.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+           {"file": "clusterinit", "target": "/usr/local/bin", "chmod": "+x"}
        ]
     },
     "steps": [
       {
         "title": "Step 1",
-        "text": "step1.md",
-        "code": "intro-foreground.sh"
+        "text": "step1.md"
       },
       {
         "title": "Step 2",
