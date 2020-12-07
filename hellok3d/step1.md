@@ -1,7 +1,7 @@
 
-# Benvenuti in Codemotion Cloud!
+# Benvenuti in Easycloud Cloud!
 
-Ciao, questo terminale ti permettera' di accedere alle funzionalita' del tuo Cloud Provider inventato che si chiama Codemotion Cloud. 
+Ciao, questo terminale ti permettera' di accedere alle funzionalita' del tuo Cloud Provider inventato che si chiama Easycloud. 
 Potrai esercitare le tue nuove abilita' creando un cluster di macchine kubernetes, effettuando il deploy di servizi web ed esplorando le possibilita' di kubernetes.
 
 ## Lanciamo l'ambiente Codemotion Cloud
