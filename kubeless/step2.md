@@ -35,6 +35,39 @@ Salviamo il nome del pod:
 
 Per ispezionare il pod usiamo il comando:
 
-`kubectl exec -it $FAUNA_POD /bin/bash`
+`kubectl exec -it $FAUNA_POD /bin/bash`{{execute}}
+
+Siamo entrati nel pod dove è installato FaunaDB ed anche la CLI che possiamo richiamare come segue:
+
+`fauna`{{execute}}
+
+Creiamo un database:
+
+`fauna create-database pets_db`{{execute}}
+
+E per questo database creiamo una chiave di accesso che servirà a collegare la nostra applicazione serverless:
+
+`fauna create-key pets_db`{{execute}}
+
+Per avere la lista dei database:
+
+`fauna list-database`{{execute}}
+
+Per avere la lista delle chiavi:
+
+`fauna list-key`{{execute}}
+
+
+pets_db> CreateCollection({ name: "pets" })
+{ ref: Collection("pets"),
+  ts: 1608709550670000,
+  history_days: 30,
+  name: 'pets' }
+pets_db> CreateIndex(
+...     {
+.....       name: "pets_by_name",
+.....       source: Collection("pets"),
+.....       terms: [{ field: ["data", "name"] }]
+.....     })
 
 
