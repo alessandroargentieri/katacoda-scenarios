@@ -19,11 +19,22 @@ Attendiamo qualche attimo e verifichiamo che gli elementi rilasciati siano attiv
 
 `kubectl get services`{{execute}}
 
-`kubectl get persistent-volumes`{{execute}}
+`kubectl get pv`{{execute}}
 
-`kubectl get persistent-volume-claims`{{execute}}
+`kubectl get pvc`{{execute}}
 
 Il nostro deploy è composto da un solo pod:
 
 `kubectl get pods`{{execute}}
+
+Salviamo il nome del pod:
+
+`export FAUNA_POD=$(kubectl get pods | grep faunadb | cut -d " " -f1)`{{execute}}
+
+## Ispezioniamo il pod di FaunaDB
+
+Per ispezionare il pod usiamo il comando:
+
+`kubectl exec -it $FAUNA_POD /bin/bash`
+
 
