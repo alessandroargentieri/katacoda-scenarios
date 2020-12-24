@@ -4,29 +4,38 @@
   "difficulty": "Beginner",
   "time": "15",
   "details": {
+    "assets": {
+      "host01": [
+          {"file": "kubeless_linux-amd64.zip", "target": "/root", "chmod": "+x"},
+          {"file": "kubeless-v1.0.7.yaml", "target": "/root", "chmod": "+x"},
+          {"file": "faunadb-deployment.yaml", "target": "/root", "chmod": "+x"},
+          {"file": "petfunction.go", "target": "/root", "chmod": "+x"},
+          {"file": "go.mod", "target": "/root", "chmod": "+x"}
+      ]
+    },
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Deploy ingress",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Deploy FaunaDB",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Esploriamo FaunaDB",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Deploy Kubeless",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "Deploy Funzione Serverless e Trigger http",
         "text": "step5.md"
       },
       {
-        "title": "Step 6",
+        "title": "Deploy Trigger https",
         "text": "step6.md"
       }
     ],
