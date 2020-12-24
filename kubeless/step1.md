@@ -16,4 +16,4 @@ Adesso vogliamo abilitare l'_ingress_ per permettere ai nostri oggetti K8s di es
 
 Possiamo verificare quando l'ingress è correttamente avviato lanciando:
 
-`kubectl get pod -n kube-system | grep "nginx"` {{execute}}
+`kubectl get pod -n kube-system | grep "nginx"`{{execute}}
