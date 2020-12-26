@@ -94,4 +94,12 @@ usciamo dal pod che stiamo ispezionando:
 
 `exit`{{execute}}
 
+## Salviamo la chiave generata
+
+Mettiamo la chiave di accesso al database in una variabile:
+
+`export FAUNA_KEY=\`{{execute}}
+
+`export FAUNA_KEY2=<paste the key here>`{{copy}}
+
 
