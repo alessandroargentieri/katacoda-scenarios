@@ -41,13 +41,21 @@ Siamo entrati nel pod dove è installato FaunaDB ed anche la CLI che possiamo ri
 
 `fauna`{{execute}}
 
-Creiamo un database:
+## Generiamo un database di esempio
+
+Possiamo generare un database in FaunaDB a partire da un applicativo che ne utilizza i driver, tramite interfaccia web, oppure tramite CLI.
+A titolo di esempio generiamo un nuovo database (pets_db) ed una nuova chiave d'accesso tramite CLI a partire dal pod che stiamo ispezionando.
+Sicuramente non è un modo canonico di procedere, ma è il modo più breve che abbiamo per avere un ecosistema funzionante per il nostro applicativo serverless.
+
+Creiamo il database:
 
 `fauna create-database pets_db`{{execute}}
 
 E per questo database creiamo una chiave di accesso che servirà a collegare la nostra applicazione serverless:
 
 `fauna create-key pets_db`{{execute}}
+
+*Copiamo la chiave appena generata*: ci servirà subito dopo.
 
 Per avere la lista dei database:
 
@@ -57,17 +65,19 @@ Per avere la lista delle chiavi:
 
 `fauna list-key`{{execute}}
 
+## Generiamo una collection
 
-pets_db> CreateCollection({ name: "pets" })
-{ ref: Collection("pets"),
-  ts: 1608709550670000,
-  history_days: 30,
-  name: 'pets' }
-pets_db> CreateIndex(
+A titolo di esempio generiamo una nuova collection (pets_db) e un indice di ricerca ad esso collegato.
+
+`CreateCollection({ name: "pets" })`{{execute}}
+
+`CreateIndex(
 ...     {
 .....       name: "pets_by_name",
 .....       source: Collection("pets"),
 .....       terms: [{ field: ["data", "name"] }]
-.....     })
+.....     })`{{execute}}
+
+
 
 
