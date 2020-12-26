@@ -1,4 +1,3 @@
-# Deploy di FaunaDB!
 
 Le funzioni serverless si sposano bene con l'utilizzo di Database Serverless. In questo esempio deployeremo FaunaDB, il database serverless sviluppato dai creatori di Twitter e vi inseriremo dei dati di esempio.
 
@@ -100,6 +99,6 @@ Mettiamo la chiave di accesso al database in una variabile:
 
 `export FAUNA_KEY=\`{{execute}}
 
-`export FAUNA_KEY2=<paste the key here>`{{copy}}
+incolliamo la chiave copiata e premiamo INVIO.
 
 
