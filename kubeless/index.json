@@ -10,16 +10,17 @@
           {"file": "kubeless-v1.0.7.yaml", "target": "/root", "chmod": "+x"},
           {"file": "faunadb-deployment.yaml", "target": "/root", "chmod": "+x"},
           {"file": "petfunction.go", "target": "/root", "chmod": "+x"},
+          {"file": "kafka-zookeeper-v1.1.0.yaml", "target": "/root", "chmod": "+x"},
           {"file": "go.mod", "target": "/root", "chmod": "+x"}
       ]
     },
     "steps": [
       {
-        "title": "Deploy ingress",
+        "title": "Deploy dell'Ingress",
         "text": "step1.md"
       },
       {
-        "title": "Deploy FaunaDB",
+        "title": "Deploy di FaunaDB",
         "text": "step2.md"
       },
       {
