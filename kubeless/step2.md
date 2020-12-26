@@ -59,25 +59,39 @@ E per questo database creiamo una chiave di accesso che servirà a collegare la 
 
 Per avere la lista dei database:
 
-`fauna list-database`{{execute}}
+`fauna list-databases`{{execute}}
 
 Per avere la lista delle chiavi:
 
-`fauna list-key`{{execute}}
+`fauna list-keys`{{execute}}
 
 ## Generiamo una collection
 
-A titolo di esempio generiamo una nuova collection (pets_db) e un indice di ricerca ad esso collegato.
+A titolo di esempio generiamo una nuova collection (pets) e un indice di ricerca ad esso collegato.
+
+Entriamo con lo strumento _shell_ nel database appena creato:
+
+`fauna shell pets_db`{{execute}}
+
+creiamo una collection: 
 
 `CreateCollection({ name: "pets" })`{{execute}}
 
+creiamo un indice di ricerca:
+
 `CreateIndex(
-...     {
-.....       name: "pets_by_name",
-.....       source: Collection("pets"),
-.....       terms: [{ field: ["data", "name"] }]
-.....     })`{{execute}}
+    {
+       name: "pets_by_name",
+       source: Collection("pets"),
+       terms: [{ field: ["data", "name"] }]
+    })`{{execute}}
 
+usciamo dallo strumento shell:
 
+`.exit`{{execute}}
+
+usciamo dal pod che stiamo ispezionando:
+
+`exit`{{execute}}
 
 
