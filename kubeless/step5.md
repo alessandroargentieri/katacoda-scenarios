@@ -36,7 +36,7 @@ Creiamo il topic _pets_topic_ usando Kubeless CLI:
 
 Creiamo il trigger _save-pets-trigger_ che andrà ad attivare la funzione _save-pets_:
 
-`kubeless trigger kafka create save-pets-trigger --function-name save-pets --trigger-topic pets-topic`{{execute}}
+`kubeless trigger kafka create save-pets-trigger --function-selector created-by=kubeless,function=save-pets --trigger-topic pets-topic`{{execute}}
 
 La funzione _read-pets_ sarà attivata da una chiamata verso https://pets.example.com/pets.
 Per simulare la registrazione del dominio _pets.example.com_ possiamo registrare il dominio localmente in /etc/hosts:
