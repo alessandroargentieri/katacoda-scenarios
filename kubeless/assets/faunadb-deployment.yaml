@@ -28,7 +28,7 @@ spec:
       storage: 1Gi
 ---
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: faunadb
   labels:
@@ -39,8 +39,7 @@ spec:
     matchLabels:
       app: faunadb
       tier: database
-  strategy:
-    type: Recreate
+  serviceName: "faunadb"
   template:
     metadata:
       labels:
