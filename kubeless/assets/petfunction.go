@@ -14,7 +14,7 @@ type Pet struct {
 }
 
 func Save(event functions.Event, context functions.Context) (string, error) {
-    secret := os.Getenv("SECRET")
+    secret := os.Getenv("FAUNA_KEY")
     dbUrl := os.Getenv("FAUNA_URL")
     client := f.NewFaunaClient(secret, f.Endpoint(dbUrl))
 
@@ -31,7 +31,7 @@ func Save(event functions.Event, context functions.Context) (string, error) {
                f.Get(
                         f.MatchTerm(
                                 f.Index("pets_by_name"),
-                                "Fuffy",
+                                pet.Name,
                         ),
                 ),
      )
