@@ -1,6 +1,6 @@
 {
-  "title": "Serverless with Kubeless",
-  "description": "Deploy of Serverless functions in Minikube K8s using kubeless framework and FaunaDB.",
+  "title": "Serverless con Kubeless",
+  "description": "Deploy di un applicativo serverless in Minikube utilizzando il framework Kubeless.",
   "difficulty": "Beginner",
   "time": "15",
   "details": {
@@ -16,7 +16,7 @@
     },
     "steps": [
       {
-        "title": "Deploy dell'Ingress",
+        "title": "Benvenuti!",
         "text": "step1.md"
       },
       {
@@ -24,11 +24,11 @@
         "text": "step2.md"
       },
       {
-        "title": "Esploriamo FaunaDB",
+        "title": "Installazione di Kubeless",
         "text": "step3.md"
       },
       {
-        "title": "Deploy Kubeless",
+        "title": "Deploy e test dell'applicativo",
         "text": "step4.md"
       },
       {
@@ -48,9 +48,9 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "minikube-running"
+    "imageid": "minikube"
   }
 }
