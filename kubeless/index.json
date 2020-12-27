@@ -30,14 +30,6 @@
       {
         "title": "Deploy e test dell'applicativo",
         "text": "step4.md"
-      },
-      {
-        "title": "Deploy Funzione Serverless e Trigger http",
-        "text": "step5.md"
-      },
-      {
-        "title": "Deploy Trigger https",
-        "text": "step6.md"
       }
     ],
     "intro": {
