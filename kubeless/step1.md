@@ -4,7 +4,7 @@ In questa esercitazione utilizzeremo un cluster Kubernetes avviato tramite la di
 
 Avviamo il nostro cluster Minikube con:
 
-`minikube start --cpus 4 --memory 8192`{{execute}}
+`minikube start`{{execute}}
 
 Minikube permette una serie di facilitazioni per abilitare il tuo cluster ad eseguire una serie di operazioni. 
 Diamo uno sguardo agli _addons_ che sono abilitati nel nostro cluster Minikube:
