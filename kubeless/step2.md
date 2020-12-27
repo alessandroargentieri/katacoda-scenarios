@@ -56,10 +56,6 @@ Per avere la lista dei database:
 
 `fauna list-databases`{{execute}}
 
-Per avere la lista delle chiavi:
-
-`fauna list-keys`{{execute}}
-
 ## Generiamo una collection
 
 A titolo di esempio generiamo una nuova collection (pets) e un indice di ricerca ad esso collegato.
@@ -90,6 +86,10 @@ Per il database appena creato generiamo una chiave di accesso che servirà a col
 `fauna create-key pets_db`{{execute}}
 
 *Copiamo la chiave appena generata*: ci servirà subito dopo.
+
+Per avere la lista delle chiavi per la nostra istanza di FaunaDB:
+
+`fauna list-keys`{{execute}}
 
 usciamo dal pod che stiamo ispezionando:
 

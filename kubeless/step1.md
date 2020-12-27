@@ -2,6 +2,10 @@
 
 In questa esercitazione utilizzeremo un cluster Kubernetes avviato tramite la distribuzione Minikube.
 
+Avviamo il nostro cluster Minikube con:
+
+`minikube start`{{execute}}
+
 Minikube permette una serie di facilitazioni per abilitare il tuo cluster ad eseguire una serie di operazioni. 
 Diamo uno sguardo agli _addons_ che sono abilitati nel nostro cluster Minikube:
 

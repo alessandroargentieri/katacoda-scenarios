@@ -34,6 +34,10 @@ Con la distribuzione kubernetes Minikube, questo compito è molto semplice, perc
 
 `minikube addons enable ingress`{{execute}}
 
+Vediamo quindi la lista aggiornata degli _addons_ di Minikube con:
+
+`minikube addons list`{{execute}}
+
 Possiamo verificare quando l'ingress è correttamente avviato lanciando:
 
 `kubectl get pod -n kube-system | grep nginx`{{execute}}
@@ -46,6 +50,10 @@ Per simulare la registrazione del dominio _pets.example.com_ possiamo registrare
 Andiamo adesso a creare un _self signed certificate_ per poter fare le chiamate in https:
 
 `openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt -subj "/CN=pets.example.com"`{{execute}}
+
+Questi sono i file generati:
+
+`ls -t | head -2`{{execute}}
 
 Salviamo il certificato prodotto in un _secret_ di kubernetes:
 
