@@ -21,7 +21,10 @@
       "text": "finish.md"
     }
   },
-  "environment": {},
+  "environment": {
+    "uilayout": "editor-terminal",
+    "showvisualise": true
+  },
   "backend": {
     "imageid": "kubernetes-cluster"
   }
