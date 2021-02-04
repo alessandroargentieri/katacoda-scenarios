@@ -8,7 +8,9 @@
        "host01": [
            {"file": "launch.sh", "target": "/usr/local/bin/", "chmod": "+x"},
            {"file": "clusterinit", "target": "/usr/local/bin", "chmod": "+x"},
-           {"file": "domain", "target": "/usr/local/bin", "chmod": "+x"}
+           {"file": "domain", "target": "/usr/local/bin", "chmod": "+x"},
+           {"file": "ingress.yaml", "target": "/root", "chmod": "+x"},
+           {"file": "deployment.yaml", "target": "/root", "chmod": "+x"}
        ]
     },
     "steps": [
