@@ -23,3 +23,19 @@ Quali sono le macchine (i nodi) del nostro cluster provisionati?
 
 `kubectl get nodes`{{execute}}
 
+## Creiamo il dominio
+
+`domain`{{execute}}
+
+`shop.example.com`{{execute}}
+
+## Applichiamo i deployment
+
+`kubectl apply -f deployment.yaml`{{execute}}
+
+`kubectl apply -f ingress.yaml`{{execute}}
+
+## Uno sguardo a Swagger
+
+Render port 80: https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
+
