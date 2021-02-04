@@ -6,14 +6,14 @@ name=${name:-example.com}
 read -p "Https [N]: " https
 masters=${https:-N}
 
-echo "127.0.0.1 $(name)" | sudo tee -a /etc/hosts
+echo "127.0.0.1 $name" | sudo tee -a /etc/hosts
 
-echo "Domain $(name) registered"
+echo "Domain $name registered"
 
 
 if [[ "$https" == "Y" ]]; then
-    openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout tls.key -out tls.crt -subj "/CN=$(name)" -days 365
+    openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout tls.key -out tls.crt -subj "/CN=$name" -days 365
     ls | grep "tls."
-    echo "Issued https certificate for $(name)"
+    echo "Issued https certificate for $name"
 fi
 
