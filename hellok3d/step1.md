@@ -37,5 +37,5 @@ Quali sono le macchine (i nodi) del nostro cluster provisionati?
 
 ## Uno sguardo a Swagger
 
-Render port 80: https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
+https://[[HOST_SUBDOMAIN]]-8888-[[KATACODA_HOST]].environments.katacoda.com/
 
