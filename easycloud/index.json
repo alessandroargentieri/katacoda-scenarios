@@ -8,7 +8,7 @@
        "host01": [
            {"file": "launch.sh", "target": "/usr/local/bin/", "chmod": "+x"},
            {"file": "clusterinit", "target": "/usr/local/bin", "chmod": "+x"},
-           {"file": "install-k3d", "target": "/usr/local/bin", "chmod": "+x"}
+           {"file": "install-k3d.sh", "target": "/usr/local/bin", "chmod": "+x"}
        ]
     },
     "steps": [
