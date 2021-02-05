@@ -2,33 +2,18 @@
 
 APP_NAME="k3d"
 REPO_URL="https://github.com/rancher/k3d"
-
+#https://github.com/rancher/k3d/releases/download/v4.0.0/k3d-linux-arm64
 : ${USE_SUDO:="true"}
 : ${K3D_INSTALL_DIR:="/usr/local/bin"}
 
 # initArch discovers the architecture for this system.
 initArch() {
-  ARCH=$(uname -m)
-  case $ARCH in
-    armv5*) ARCH="armv5";;
-    armv6*) ARCH="armv6";;
-    armv7*) ARCH="arm";;
-    aarch64) ARCH="arm64";;
-    x86) ARCH="386";;
-    x86_64) ARCH="amd64";;
-    i686) ARCH="386";;
-    i386) ARCH="386";;
-  esac
+  ARCH=amd64
 }
 
 # initOS discovers the operating system for this system.
 initOS() {
-  OS=$(uname|tr '[:upper:]' '[:lower:]')
-
-  case "$OS" in
-    # Minimalist GNU for Windows
-    mingw*) OS='windows';;
-  esac
+  OS="linux"
 }
 
 # runs the given command as root (detects if we are root already)
@@ -93,8 +78,9 @@ checkLatestVersion() {
 # downloadFile downloads the latest binary package and also the checksum
 # for that binary.
 downloadFile() {
+  TAG="v4.0.0"
   K3D_DIST="k3d-$OS-$ARCH"
-  DOWNLOAD_URL="$REPO_URL/releases/download/$TAG/$K3D_DIST"
+  DOWNLOAD_URL="$REPO_URL/releases/download/$TAG/$K3D_DIST" #https://github.com/rancher/k3d/releases/download/v4.0.0/k3d-linux-arm64
   K3D_TMP_ROOT="$(mktemp -dt k3d-binary-XXXXXX)"
   K3D_TMP_FILE="$K3D_TMP_ROOT/$K3D_DIST"
   if type "curl" > /dev/null; then
