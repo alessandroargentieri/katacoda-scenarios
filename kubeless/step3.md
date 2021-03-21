@@ -29,12 +29,11 @@ Visioniamo il controller di kubeless:
 
 La command line interface di kubeless ci fornisce una serie di facilitazioni per comunicare con il nostro cluster ed effettuare il deploy delle _custom resource_ ovvero _function_, _trigger_, _cronjob_.
 
-Installiamo la CLI partendo dal file di installazione che è presente nella root directory:
+Installiamo la CLI con:
 
-`ls *.zip`{{execute}}
-
-`unzip kubeless_linux-amd64.zip && \
-   sudo mv bundles/kubeless_linux-amd64/kubeless /usr/local/bin/`{{execute}}
+`curl -OL https://github.com/kubeless/kubeless/releases/download/v1.0.7/kubeless_linux-amd64.zip && \
+  unzip kubeless_linux-amd64.zip && \
+  sudo mv bundles/kubeless_linux-amd64/kubeless /usr/local/bin/`{{execute}}
 
 Una volta installata la CLI proviamo subito ad utilizzarla per visualizzare i _runtime_ supportati:
 

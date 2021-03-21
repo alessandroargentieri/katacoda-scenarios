@@ -6,11 +6,9 @@
   "details": {
     "assets": {
       "host01": [
-          {"file": "kubeless_linux-amd64.zip", "target": "/root", "chmod": "+x"},
           {"file": "kubeless-v1.0.7.yaml", "target": "/root", "chmod": "+x"},
           {"file": "faunadb-deployment.yaml", "target": "/root", "chmod": "+x"},
           {"file": "petfunction.go", "target": "/root", "chmod": "+x"},
-          {"file": "kafka-zookeeper-v1.1.0.yaml", "target": "/root", "chmod": "+x"},
           {"file": "go.mod", "target": "/root", "chmod": "+x"}
       ]
     },
